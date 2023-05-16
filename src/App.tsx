@@ -1,26 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Header} from "./ui/compounds/header/Header";
+import {GreetingSection} from "./sections/greetingSection/GreetingSection";
+import {UsersSection} from "./sections/usersSection/UsersSection";
+import {SignUpSection} from "./sections/signUpSection/SignUpSection";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <Header />
+            <main className="flex flex-col gap-[140px] max-w-[1170px] mx-auto mb-[100px]">
+                <GreetingSection />
+                <UsersSection />
+                <SignUpSection />
+            </main>
+        </>
+    );
 }
 
 export default App;
