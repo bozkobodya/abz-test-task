@@ -18,13 +18,13 @@ export const TextEclipse: FC<TextEclipseSpanProps> = ({ className, children }) =
     return (
         <div
             className={classNames(
-                'relative group h-6',
+                'relative group h-[26px]',
                 { 'cursor-pointer': isTextOverflowed },
                 className
             )}>
             <span
                 ref={ref}
-                className="truncate text-center inline-block w-full"
+                className="truncate text-center leading-[26px] inline-block w-full"
                 onMouseOver={handleMouseOver}
             >
                 {children}

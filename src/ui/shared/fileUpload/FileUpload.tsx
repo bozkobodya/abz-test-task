@@ -15,7 +15,7 @@ export const FileUpload: FC<FileUploadProps> = ({
     handleUploadFile
 }) => (
     <div className={classNames('flex flex-col gap-1 w-full', className)}>
-        <label className="text-base flex w-full cursor-pointer">
+        <label className="text-base leading-[26px] flex w-full cursor-pointer h-[54px]">
             <div
                 className={classNames(
                     'border rounded-l py-[14px] px-[15px]',

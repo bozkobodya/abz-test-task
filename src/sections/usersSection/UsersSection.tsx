@@ -31,7 +31,10 @@ export const UsersSection = () => {
             {!usersListFinished && (
                 isFetching
                     ? <Loader />
-                    : <Button onClick={handleLoadUsers}>
+                    : <Button
+                        className="px-[18px]"
+                        onClick={handleLoadUsers}
+                    >
                           Show more
                       </Button>
             )}

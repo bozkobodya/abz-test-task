@@ -13,7 +13,7 @@ export const RadioButton: FC<RadioButtonProps> = ({
     handleOnClick
 }) => (
     <button
-        className="flex items-center gap-3 outline-none"
+        className="flex items-center gap-3 outline-none text-base leading-[26px]"
         onClick={handleOnClick}
     >
         <div className={classNames(

@@ -4,7 +4,12 @@ body {
 }
 
 .first-section {
-    background: url("/src/assets/images/big-landscape.webp") no-repeat;
+    background: url("/src/assets/images/small-landscape.webp") no-repeat;
+
+    @media screen and (min-width: 768px) {
+        background: url("/src/assets/images/big-landscape.webp") no-repeat;
+    }
+
     background-size: 100% 100%;
 }
 
